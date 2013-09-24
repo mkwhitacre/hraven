@@ -97,6 +97,14 @@
         <enabled>true</enabled>
       </snapshots>
      </repository>
+        <repository>
+            <id>cloudera-release</id>
+            <name>Cloudera release repository</name>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>     
   </repositories>
 
   <issueManagement>
@@ -120,7 +128,9 @@
   <properties>
     <compileSource>1.6</compileSource>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <hbase.version>0.94.3</hbase.version>
+    <hbase.version>0.94.6-cdh4.3.0</hbase.version>
+    <hadoopCDHMRVersion>2.0.0-mr1-cdh4.3.0</hadoopCDHMRVersion>
+    <hadoopCDHVersion>2.0.0-cdh4.3.0</hadoopCDHVersion>
     <hadoop.version>1.0.4</hadoop.version>
 
     <commons-logging.version>1.1.1</commons-logging.version>
